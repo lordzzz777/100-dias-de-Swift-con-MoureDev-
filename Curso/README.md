@@ -1,4 +1,4 @@
-![Cover100Dias_D](https://github.com/kontroldev/100-dias-de-Swift-con-MoureDev/assets/75795616/b1e16439-d3ec-48cf-8232-9796c9eedc38)
+![Cover100:Dias D](https://github.com/lordzzz777/100-dias-de-swift-con-MoureDev/assets/114311106/8b65980a-d02b-4bfe-85a5-0ae1191a5a53)
 
 # Bienvenidos a los 100 días de Swift con MoureDev! 👋
 
@@ -6,7 +6,7 @@ Ayer propusimos una emocionante actividad para toda la comunidad interesada en a
 
 ## Cómo Participar
 
-- **Lista de YouTube:** Puedes utilizar la [lista de reproducción de Moure en YouTube](https://youtube.com/playlist?list=PLNdFk2_brsRdyYGDX8QLFKmcpQPjFFrDC&si=LpbCacTYF-Ol5O63).
+- **Repositorio de YouTube:** Puedes utilizar la [lista de reproducción de Moure en YouTube](https://youtube.com/playlist?list=PLNdFk2_brsRdyYGDX8QLFKmcpQPjFFrDC&si=LpbCacTYF-Ol5O63).
 
 - **Curso en Udemy:** También está disponible el curso en [Udemy](https://www.udemy.com/course/swift_ios/).
 
@@ -33,5 +33,3 @@ Si encuentras alguna lección difícil, ¡no te preocupes! Hay grupos de estudio
 Recuerda, esto es una actividad para aprender juntos como comunidad. ¡Todos pueden participar!
 
 ## ¡Esperamos verte en el chat de grupo de estudio y disfrutar juntos de estos 100 días de aprendizaje!
-
-**El enlace para poder participar:** [https://discord.com/channels/729672926432985098/1164618377973727263](https://discord.com/channels/729672926432985098/1164618377973727263)

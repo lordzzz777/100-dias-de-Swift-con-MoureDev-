@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='Dia1_Asignacion_Implicita_explicita'/>
+        <page name='Dia1_TiposDeDatos'/>
+        <page name='Dia1_Contante_variables'/>
+        <page name='Dia2_Declaraciones_Multiples'/>
+        <page name='Dia2_Caracteres_Cadenas'/>
+        <page name='Dia2_Cheracter_UnicodeEmojis'/>
+        <page name='Dia2_Concadenacion_Interpolacion'/>
+        <page name='Dia2_Comparacion_Otras_Operaciones'/>
+        <page name='Dia3_Boleanos_Valores_logicos'/>
+        <page name='Dia3_Coloeciones'/>
+        <page name='Dia3_Tuplas'/>
+        <page name='Dia3_Enumeraciones'/>
+        <page name='Dia3_Operador_Rango'/>
+        <page name='Dia3_Estructura_Control'/>
+        <page name='Dia3_Bucles_o_Ciclos'/>
+        <page name='Dia4_Funciones'/>
+        <page name='Dia5_Intrucduccion_POO'/>
+        <page name='Dia5_Estructuras'/>
+        <page name='Dia5_Clases_Instacias_Uso_de_Objetos'/>
+        <page name='Dia5_Estructuras_Vs_Clases'/>
+        <page name='Dia6_Swift_Avanzado_Optinal'/>
+        <page name='Dia7_Type_Casting'/>
+        <page name='Dia7_Tipos_Anidados'/>
+        <page name='Dia7_Extensiones_Protocolos'/>
+        <page name='Dia7_Teoria_Swift_ Avanzadas'/>
+        <page name='Dia8_Set_(Conjunttos)'/>
+        <page name='Dia8_Algoritmos_de_Colecciones'/>
+        <page name='Dia8_ Map_(Mapeo)'/>
+        <page name='Dia8_For_Each_(Iteneracion)'/>
+        <page name='Dia8_Otras_Operaciones_Con_Colecciones'/>
+        <page name='Dia9_Repaso_ Inicio de fundamentos'/>
+        <page name='Dia10_y_Dia 11_ Repaso_Operadores'/>
+        <page name='Dia12_Tipos_de_valores'/>
+        <page name='Dia13_ 14_ Colecciones_1.1_y_1.2_Array'/>
+        <page name='Dia15_ Colecciones_2.0_Set'/>
+        <page name='Dia16_Colecciones_2.1_Diccionarios'/>
+        <page name='Dia17_Colecciones_2.2_Tuplas'/>
+        <page name='Dia18_Condionales'/>
+        <page name='Dia19_20_Funciones_Actualizadas'/>
+        <page name='Dia21_ Estructuras_Prologo'/>
+        <page name='Dia22_Estructuras_class'/>
+        <page name='Dia23_Estructuras_struct'/>
+        <page name='Dia24_Estructuras_Extensiones'/>
+        <page name='Dia25_Estructuras_Enumeraciones'/>
+        <page name='Dia26_Estructuras_Protocolos (Protocols)'/>
+        <page name='Dias27_Estructuras_Tuplas (Tuples)'/>
+    </pages>
+</playground>
