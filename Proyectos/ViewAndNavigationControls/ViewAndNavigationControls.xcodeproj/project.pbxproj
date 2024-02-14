@@ -13,6 +13,7 @@
 		6E6C037C2B77664400503468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6C037A2B77664400503468 /* Main.storyboard */; };
 		6E6C037E2B77664600503468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6C037D2B77664600503468 /* Assets.xcassets */; };
 		6E6C03812B77664600503468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E6C037F2B77664600503468 /* LaunchScreen.storyboard */; };
+		6E7AC1CE2B7CB3AB0064A2A6 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7AC1CD2B7CB3AB0064A2A6 /* GreenViewController.swift */; };
 		6ECC03752B7C29D5001367E9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECC03742B7C29D5001367E9 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		6E6C037D2B77664600503468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E6C03802B77664600503468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E6C03822B77664600503468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7AC1CD2B7CB3AB0064A2A6 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		6ECC03742B7C29D5001367E9 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				6E6C037D2B77664600503468 /* Assets.xcassets */,
 				6E6C037F2B77664600503468 /* LaunchScreen.storyboard */,
 				6ECC03742B7C29D5001367E9 /* PageViewController.swift */,
+				6E7AC1CD2B7CB3AB0064A2A6 /* GreenViewController.swift */,
 				6E6C03822B77664600503468 /* Info.plist */,
 			);
 			path = ViewAndNavigationControls;
@@ -145,6 +148,7 @@
 				6E6C03752B77664400503468 /* AppDelegate.swift in Sources */,
 				6E6C03772B77664400503468 /* SceneDelegate.swift in Sources */,
 				6ECC03752B7C29D5001367E9 /* PageViewController.swift in Sources */,
+				6E7AC1CE2B7CB3AB0064A2A6 /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
