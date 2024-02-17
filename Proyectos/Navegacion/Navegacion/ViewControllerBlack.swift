@@ -8,11 +8,15 @@
 import UIKit
 
 class ViewControllerBlack: UIViewController {
-
+   
+    var titulo: String?
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let titulofinal = titulo {
+            self.title = titulofinal
+        }
+        self.view.backgroundColor = UIColor.black
     }
     
 

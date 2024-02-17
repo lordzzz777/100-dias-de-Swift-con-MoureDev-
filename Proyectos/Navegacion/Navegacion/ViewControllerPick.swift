@@ -9,10 +9,14 @@ import UIKit
 
 class ViewControllerPick: UIViewController {
 
+    var titulo: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let titulofinal = titulo {
+            self.title = titulofinal
+        }
     }
     
 

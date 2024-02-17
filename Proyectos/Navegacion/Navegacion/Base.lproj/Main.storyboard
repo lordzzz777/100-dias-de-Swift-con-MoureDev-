@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAO-x8-bFO">
-                                <rect key="frame" x="143" y="181" width="106" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAO-x8-bFO">
+                                <rect key="frame" x="143" y="123" width="106" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Negro">
@@ -28,9 +27,8 @@
                                     <action selector="myButtonBlack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JkX-kj-auJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpf-Ju-UJq">
-                                <rect key="frame" x="143" y="409" width="106" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpf-Ju-UJq">
+                                <rect key="frame" x="143" y="201" width="106" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Rosa">
@@ -40,9 +38,8 @@
                                     <action selector="myButtonPink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t5J-ho-x4l"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGs-Be-thf">
-                                <rect key="frame" x="133" y="588" width="132" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGs-Be-thf">
+                                <rect key="frame" x="133" y="267" width="132" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Amarillo">
@@ -55,12 +52,23 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="IAO-x8-bFO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7bZ-Iw-aZg"/>
+                            <constraint firstItem="IAO-x8-bFO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="7lb-5o-tbd"/>
+                            <constraint firstItem="kGs-Be-thf" firstAttribute="top" secondItem="Bpf-Ju-UJq" secondAttribute="bottom" constant="8" symbolic="YES" id="B3n-fE-D8J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kGs-Be-thf" secondAttribute="trailing" constant="128" id="CX5-d9-sOj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bpf-Ju-UJq" secondAttribute="trailing" constant="144" id="MSC-cK-62c"/>
+                            <constraint firstItem="Bpf-Ju-UJq" firstAttribute="top" secondItem="IAO-x8-bFO" secondAttribute="bottom" constant="20" id="TT0-NH-lsn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IAO-x8-bFO" secondAttribute="trailing" constant="144" id="cBw-4c-w6S"/>
+                            <constraint firstItem="Bpf-Ju-UJq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="oTi-Hd-J7J"/>
+                            <constraint firstItem="kGs-Be-thf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="qF2-n5-5CY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Menú" id="o0F-Ai-Oot"/>
                     <connections>
                         <segue destination="K3x-QG-HX3" kind="show" identifier="VCBlack" id="hfv-w8-1GQ"/>
                         <segue destination="ej9-hr-5bh" kind="show" identifier="VCPink" id="DHj-RO-d3i"/>
-                        <segue destination="2ZV-gl-usi" kind="show" identifier="VCYelow" id="88T-Km-gAP"/>
+                        <segue destination="2ZV-gl-usi" kind="show" identifier="VCYellow" id="88T-Km-gAP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -99,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="1726" y="4"/>
         </scene>
-        <!--View Controller Yelow-->
+        <!--View Controller Yellow-->
         <scene sceneID="Aoc-u0-Ycy">
             <objects>
-                <viewController id="2ZV-gl-usi" customClass="ViewControllerYelow" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2ZV-gl-usi" customClass="ViewControllerYellow" customModule="Navegacion" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YVq-Am-qAw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

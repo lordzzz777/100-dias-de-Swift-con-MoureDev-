@@ -27,8 +27,28 @@ class ViewController: UIViewController {
     
     
     @IBAction func myButtonYelow(_ sender: Any) {
-        print("I´m Button Yelow")
-        performSegue(withIdentifier: "VCYelow", sender: self)
+        print("I´m Button Yellow")
+        performSegue(withIdentifier: "VCYellow", sender: self)
+    }
+    
+    override func  prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "VCBlack" {
+            if let destino = segue.destination as? ViewControllerBlack{
+                destino.titulo = "Pantalla negra"
+            }
+        }
+        
+        if segue.identifier == "VCPink" {
+            if let destino = segue.destination as? ViewControllerPick{
+                destino.titulo = "Pantalla Rosa"
+            }
+        }
+        
+        if segue.identifier == "VCYellow" {
+            if let destino = segue.destination as? ViewControllerYellow{
+                destino.titulo = "Pantalla Amarillo"
+            }
+        }
     }
     
 }
