@@ -16,27 +16,61 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        tableView.delegate = self
+        tableView.tableFooterView = UIView()
+        tableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "mycustomcell")
     }
 
 
 }
 
+// MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myCountries.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "myCell")
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: "myCell")
-            cell?.backgroundColor = .gray
-            cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 50
         }
-      
-        cell!.textLabel?.text = myCountries[indexPath.row]
-        return cell!
+        return 150
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if indexPath.section == 0{
+            var cell = tableView.dequeueReusableCell(withIdentifier: "myCell")
+            if cell == nil {
+                cell = UITableViewCell(style: .default, reuseIdentifier: "myCell")
+                cell?.backgroundColor = .gray
+                cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
+                cell?.selectionStyle = .blue
+                cell?.accessoryType = .disclosureIndicator
+            }
+            
+            cell!.textLabel?.text = myCountries[indexPath.row]
+            return cell!
+        }else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "mycustomcell", for: indexPath) as? MyCustomTableViewCell
+            
+            cell?.myFirsLabel.text = String(indexPath.row + 1)
+            cell!.mySecondLabel.text = myCountries[indexPath.row]
+            return cell!
+        }
     }
     
     
+}
+
+// MARK: - UITableViewDelegate
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row, myCountries[indexPath.row])
+        
+    }
 }
