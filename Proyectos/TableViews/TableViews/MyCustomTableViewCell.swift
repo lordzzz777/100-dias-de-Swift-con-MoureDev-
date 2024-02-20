@@ -18,13 +18,16 @@ class MyCustomTableViewCell: UITableViewCell {
         
         myFirsLabel.font = UIFont.boldSystemFont(ofSize: 20)
         myFirsLabel.textColor = .blue
-        backgroundColor = .yellow
+        mySecondLabel.numberOfLines = 0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        printContent(myFirsLabel.text ?? "" )
+      //   printContent(myFirsLabel.text ?? "" )
+        
+        print(myFirsLabel.text ?? "" )
+        
     }
     
 }

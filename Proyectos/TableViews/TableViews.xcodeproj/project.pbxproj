@@ -62,8 +62,8 @@
 			children = (
 				6EF7CF112B829FAD002885DA /* AppDelegate.swift */,
 				6EF7CF132B829FAD002885DA /* SceneDelegate.swift */,
-				6E1603B22B83C4E70041475C /* MyCustomTableViewCell.swift */,
 				6EF7CF152B829FAD002885DA /* ViewController.swift */,
+				6E1603B22B83C4E70041475C /* MyCustomTableViewCell.swift */,
 				6E1603B32B83C4E70041475C /* MyCustomTableViewCell.xib */,
 				6EF7CF172B829FAD002885DA /* Main.storyboard */,
 				6EF7CF1A2B829FB1002885DA /* Assets.xcassets */,

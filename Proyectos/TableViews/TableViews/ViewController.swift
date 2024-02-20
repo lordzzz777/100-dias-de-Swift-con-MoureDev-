@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.tableFooterView = UIView()
+       
         tableView.register(UINib(nibName: "MyCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "mycustomcell")
     }
 
@@ -26,6 +26,26 @@ class ViewController: UIViewController {
 
 // MARK: - UITableViewDataSource
 extension ViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        if section == 0{
+            return "celdas simples"
+        }
+        return "Celdas custom"
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Footer para celdas simples simples"
+        }
+        
+        return "Caldas para celdas custon"
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return myCountries.count
     }
@@ -38,15 +58,15 @@ extension ViewController: UITableViewDataSource {
         if indexPath.section == 0 {
             return 50
         }
-        return 150
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.section == 0{
-            var cell = tableView.dequeueReusableCell(withIdentifier: "myCell")
+            var cell = tableView.dequeueReusableCell(withIdentifier: "mycell")
             if cell == nil {
-                cell = UITableViewCell(style: .default, reuseIdentifier: "myCell")
+                cell = UITableViewCell(style: .default, reuseIdentifier: "mycell")
                 cell?.backgroundColor = .gray
                 cell?.textLabel?.font = UIFont.systemFont(ofSize: 20)
                 cell?.selectionStyle = .blue
@@ -60,6 +80,11 @@ extension ViewController: UITableViewDataSource {
             
             cell?.myFirsLabel.text = String(indexPath.row + 1)
             cell!.mySecondLabel.text = myCountries[indexPath.row]
+            
+            if indexPath.row == 2{
+                cell?.mySecondLabel.text = "Hola mundojfjfjfjfjfjfjfjfjfjjfjfjf"
+            }
+            
             return cell!
         }
     }
@@ -70,7 +95,7 @@ extension ViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row, myCountries[indexPath.row])
+        print(myCountries[indexPath.row])
         
     }
 }
