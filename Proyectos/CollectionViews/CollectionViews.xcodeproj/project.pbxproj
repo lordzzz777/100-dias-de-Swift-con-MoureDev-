@@ -63,12 +63,12 @@
 				6E2C062F2B8666F000CFA856 /* AppDelegate.swift */,
 				6E2C06312B8666F000CFA856 /* SceneDelegate.swift */,
 				6E2C06332B8666F000CFA856 /* ViewController.swift */,
+				6E2C06432B866CD100CFA856 /* MyCustomCollectionViewCell.swift */,
+				6E2C06442B866CD100CFA856 /* MyCustomCollectionViewCell.xib */,
 				6E2C06352B8666F000CFA856 /* Main.storyboard */,
 				6E2C06382B8666F300CFA856 /* Assets.xcassets */,
 				6E2C063A2B8666F300CFA856 /* LaunchScreen.storyboard */,
 				6E2C063D2B8666F300CFA856 /* Info.plist */,
-				6E2C06432B866CD100CFA856 /* MyCustomCollectionViewCell.swift */,
-				6E2C06442B866CD100CFA856 /* MyCustomCollectionViewCell.xib */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";

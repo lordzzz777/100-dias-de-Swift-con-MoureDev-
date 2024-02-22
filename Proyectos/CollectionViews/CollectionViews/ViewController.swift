@@ -12,11 +12,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var collectiionView: UICollectionView!
     
     private let myCountries = ["España", "Portugal", "francia", "Italia", "Alemania", "Inglaterra" ]
-    
+    private let myCellVidth = UIScreen.main.bounds.width / 2
     override func viewDidLoad() {
         super.viewDidLoad()
         collectiionView.dataSource = self
-        
+        collectiionView.delegate = self
         collectiionView.register(UINib(nibName: "MyCustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "mycell")
     }
 
@@ -40,4 +40,18 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     
+}
+
+// MARK: - UICollectionViewDelegate
+extension ViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("\(indexPath.section) \(myCountries[indexPath.row])")
+    }
+}
+
+// MARK: - UICollectionViewDelegateFlowLayout
+extension ViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: myCellVidth, height: myCellVidth)
+    }
 }
