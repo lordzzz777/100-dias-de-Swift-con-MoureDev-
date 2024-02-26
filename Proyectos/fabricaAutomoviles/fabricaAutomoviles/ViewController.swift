@@ -2,39 +2,46 @@
 //  ViewController.swift
 //  fabricaAutomoviles
 //
-//  Created by lordzzz on 24/2/24.
+//  Created by Juan Villalvazo.
+//  Copyright ©Juan Villalvazo. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-    
-    var typeAU: Int?
-    
-    @IBOutlet weak var myButtonSencillo: UIButton!
-    @IBOutlet weak var myButtonElectrico: UIButton!
-    
-    
+
+    var tipoAutomovil:Int?
+    var x = 10
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
 
-    @IBAction func crearSencillo(_ sender: Any) {
-        typeAU = 0
-        performSegue(withIdentifier: "nView2", sender: self)
+    }
+ 
+    @IBAction func crearAutomovil(_ sender: Any) {
+    
+      tipoAutomovil = 0
+    performSegue(withIdentifier: "segueSegundaPantalla", sender: self)
     }
     
-    @IBAction func crearElectrico(_ sender: Any) {
-        typeAU = 1
-        performSegue(withIdentifier: "nView2", sender: self)
+    @IBAction func crearAutomovilMazda(_ sender: Any) {
+    
+    tipoAutomovil = 1
+    performSegue(withIdentifier: "segueSegundaPantalla", sender: self)
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destino = segue.destination as? ViewController2 {
-            destino.typeAU = self.typeAU
+         
+        if let destino = segue.destination as?
+            
+            ViewControllerSegundaPantalla{
+            destino.tipoAutomovil = self.tipoAutomovil
+          
         }
+        
+        // Pass the selected object to the new view controller.
     }
+    
     
 }
 

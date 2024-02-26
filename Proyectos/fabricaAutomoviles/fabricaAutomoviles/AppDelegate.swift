@@ -2,12 +2,13 @@
 //  AppDelegate.swift
 //  fabricaAutomoviles
 //
-//   Created by lordzzz on 24/2/24.
+//  Created by Juan Villalvazo.
+//  Copyright ©Juan Villalvazo. All rights reserved.
 //
 
 import UIKit
 
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

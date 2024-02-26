@@ -3,35 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E184F242B89F7AC00A37E96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E184F232B89F7AC00A37E96 /* AppDelegate.swift */; };
-		6E184F262B89F7AC00A37E96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E184F252B89F7AC00A37E96 /* SceneDelegate.swift */; };
-		6E184F282B89F7AC00A37E96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E184F272B89F7AC00A37E96 /* ViewController.swift */; };
-		6E184F2B2B89F7AC00A37E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E184F292B89F7AC00A37E96 /* Main.storyboard */; };
-		6E184F2D2B89F7AE00A37E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E184F2C2B89F7AE00A37E96 /* Assets.xcassets */; };
-		6E184F302B89F7AE00A37E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E184F2E2B89F7AE00A37E96 /* LaunchScreen.storyboard */; };
-		6E184F382B89F88500A37E96 /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E184F372B89F88500A37E96 /* Automovil.swift */; };
-		6E4F758E2B8BB5660096D43C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4F758D2B8BB5660096D43C /* ViewController2.swift */; };
+		A57A574B244C542600A83733 /* AutomovilElectrico.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57A574A244C542600A83733 /* AutomovilElectrico.swift */; };
+		A5BE2DC72440541C00AF033B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE2DC62440541C00AF033B /* AppDelegate.swift */; };
+		A5BE2DC92440541C00AF033B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE2DC82440541C00AF033B /* SceneDelegate.swift */; };
+		A5BE2DCB2440541C00AF033B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BE2DCA2440541C00AF033B /* ViewController.swift */; };
+		A5BE2DCE2440541C00AF033B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BE2DCC2440541C00AF033B /* Main.storyboard */; };
+		A5BE2DD02440541F00AF033B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BE2DCF2440541F00AF033B /* Assets.xcassets */; };
+		A5BE2DD32440541F00AF033B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BE2DD12440541F00AF033B /* LaunchScreen.storyboard */; };
+		A5D99A2D24468F4600B68C8E /* Automovil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D99A2C24468F4600B68C8E /* Automovil.swift */; };
+		A5FBAD9624495DE700CB7CE9 /* ViewControllerSegundaPantalla.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FBAD9524495DE700CB7CE9 /* ViewControllerSegundaPantalla.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E184F202B89F7AC00A37E96 /* fabricaAutomoviles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fabricaAutomoviles.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E184F232B89F7AC00A37E96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6E184F252B89F7AC00A37E96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6E184F272B89F7AC00A37E96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6E184F2A2B89F7AC00A37E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6E184F2C2B89F7AE00A37E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6E184F2F2B89F7AE00A37E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6E184F312B89F7AE00A37E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E184F372B89F88500A37E96 /* Automovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
-		6E4F758D2B8BB5660096D43C /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		A57A574A244C542600A83733 /* AutomovilElectrico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomovilElectrico.swift; sourceTree = "<group>"; };
+		A5BE2DC32440541C00AF033B /* fabricaAutomoviles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fabricaAutomoviles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BE2DC62440541C00AF033B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5BE2DC82440541C00AF033B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A5BE2DCA2440541C00AF033B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5BE2DCD2440541C00AF033B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5BE2DCF2440541F00AF033B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5BE2DD22440541F00AF033B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5BE2DD42440541F00AF033B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5D99A2C24468F4600B68C8E /* Automovil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Automovil.swift; sourceTree = "<group>"; };
+		A5FBAD9524495DE700CB7CE9 /* ViewControllerSegundaPantalla.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSegundaPantalla.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E184F1D2B89F7AC00A37E96 /* Frameworks */ = {
+		A5BE2DC02440541C00AF033B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,34 +43,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E184F172B89F7AB00A37E96 = {
+		A5BE2DBA2440541C00AF033B = {
 			isa = PBXGroup;
 			children = (
-				6E184F222B89F7AC00A37E96 /* fabricaAutomoviles */,
-				6E184F212B89F7AC00A37E96 /* Products */,
+				A5BE2DC52440541C00AF033B /* fabricaAutomoviles */,
+				A5BE2DC42440541C00AF033B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6E184F212B89F7AC00A37E96 /* Products */ = {
+		A5BE2DC42440541C00AF033B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E184F202B89F7AC00A37E96 /* fabricaAutomoviles.app */,
+				A5BE2DC32440541C00AF033B /* fabricaAutomoviles.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E184F222B89F7AC00A37E96 /* fabricaAutomoviles */ = {
+		A5BE2DC52440541C00AF033B /* fabricaAutomoviles */ = {
 			isa = PBXGroup;
 			children = (
-				6E184F232B89F7AC00A37E96 /* AppDelegate.swift */,
-				6E184F252B89F7AC00A37E96 /* SceneDelegate.swift */,
-				6E184F272B89F7AC00A37E96 /* ViewController.swift */,
-				6E4F758D2B8BB5660096D43C /* ViewController2.swift */,
-				6E184F372B89F88500A37E96 /* Automovil.swift */,
-				6E184F292B89F7AC00A37E96 /* Main.storyboard */,
-				6E184F2C2B89F7AE00A37E96 /* Assets.xcassets */,
-				6E184F2E2B89F7AE00A37E96 /* LaunchScreen.storyboard */,
-				6E184F312B89F7AE00A37E96 /* Info.plist */,
+				A5BE2DC62440541C00AF033B /* AppDelegate.swift */,
+				A5BE2DC82440541C00AF033B /* SceneDelegate.swift */,
+				A5BE2DCA2440541C00AF033B /* ViewController.swift */,
+				A5FBAD9524495DE700CB7CE9 /* ViewControllerSegundaPantalla.swift */,
+				A5D99A2C24468F4600B68C8E /* Automovil.swift */,
+				A57A574A244C542600A83733 /* AutomovilElectrico.swift */,
+				A5BE2DCC2440541C00AF033B /* Main.storyboard */,
+				A5BE2DCF2440541F00AF033B /* Assets.xcassets */,
+				A5BE2DD12440541F00AF033B /* LaunchScreen.storyboard */,
+				A5BE2DD42440541F00AF033B /* Info.plist */,
 			);
 			path = fabricaAutomoviles;
 			sourceTree = "<group>";
@@ -76,13 +79,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E184F1F2B89F7AC00A37E96 /* fabricaAutomoviles */ = {
+		A5BE2DC22440541C00AF033B /* fabricaAutomoviles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E184F342B89F7AE00A37E96 /* Build configuration list for PBXNativeTarget "fabricaAutomoviles" */;
+			buildConfigurationList = A5BE2DD72440541F00AF033B /* Build configuration list for PBXNativeTarget "fabricaAutomoviles" */;
 			buildPhases = (
-				6E184F1C2B89F7AC00A37E96 /* Sources */,
-				6E184F1D2B89F7AC00A37E96 /* Frameworks */,
-				6E184F1E2B89F7AC00A37E96 /* Resources */,
+				A5BE2DBF2440541C00AF033B /* Sources */,
+				A5BE2DC02440541C00AF033B /* Frameworks */,
+				A5BE2DC12440541C00AF033B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -90,83 +93,84 @@
 			);
 			name = fabricaAutomoviles;
 			productName = fabricaAutomoviles;
-			productReference = 6E184F202B89F7AC00A37E96 /* fabricaAutomoviles.app */;
+			productReference = A5BE2DC32440541C00AF033B /* fabricaAutomoviles.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6E184F182B89F7AB00A37E96 /* Project object */ = {
+		A5BE2DBB2440541C00AF033B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Juan Villalvazo";
 				TargetAttributes = {
-					6E184F1F2B89F7AC00A37E96 = {
-						CreatedOnToolsVersion = 15.2;
+					A5BE2DC22440541C00AF033B = {
+						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
-			buildConfigurationList = 6E184F1B2B89F7AB00A37E96 /* Build configuration list for PBXProject "fabricaAutomoviles" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = A5BE2DBE2440541C00AF033B /* Build configuration list for PBXProject "fabricaAutomoviles" */;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 6E184F172B89F7AB00A37E96;
-			productRefGroup = 6E184F212B89F7AC00A37E96 /* Products */;
+			mainGroup = A5BE2DBA2440541C00AF033B;
+			productRefGroup = A5BE2DC42440541C00AF033B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E184F1F2B89F7AC00A37E96 /* fabricaAutomoviles */,
+				A5BE2DC22440541C00AF033B /* fabricaAutomoviles */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6E184F1E2B89F7AC00A37E96 /* Resources */ = {
+		A5BE2DC12440541C00AF033B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E184F302B89F7AE00A37E96 /* LaunchScreen.storyboard in Resources */,
-				6E184F2D2B89F7AE00A37E96 /* Assets.xcassets in Resources */,
-				6E184F2B2B89F7AC00A37E96 /* Main.storyboard in Resources */,
+				A5BE2DD32440541F00AF033B /* LaunchScreen.storyboard in Resources */,
+				A5BE2DD02440541F00AF033B /* Assets.xcassets in Resources */,
+				A5BE2DCE2440541C00AF033B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6E184F1C2B89F7AC00A37E96 /* Sources */ = {
+		A5BE2DBF2440541C00AF033B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4F758E2B8BB5660096D43C /* ViewController2.swift in Sources */,
-				6E184F282B89F7AC00A37E96 /* ViewController.swift in Sources */,
-				6E184F382B89F88500A37E96 /* Automovil.swift in Sources */,
-				6E184F242B89F7AC00A37E96 /* AppDelegate.swift in Sources */,
-				6E184F262B89F7AC00A37E96 /* SceneDelegate.swift in Sources */,
+				A5BE2DCB2440541C00AF033B /* ViewController.swift in Sources */,
+				A57A574B244C542600A83733 /* AutomovilElectrico.swift in Sources */,
+				A5FBAD9624495DE700CB7CE9 /* ViewControllerSegundaPantalla.swift in Sources */,
+				A5BE2DC72440541C00AF033B /* AppDelegate.swift in Sources */,
+				A5D99A2D24468F4600B68C8E /* Automovil.swift in Sources */,
+				A5BE2DC92440541C00AF033B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6E184F292B89F7AC00A37E96 /* Main.storyboard */ = {
+		A5BE2DCC2440541C00AF033B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6E184F2A2B89F7AC00A37E96 /* Base */,
+				A5BE2DCD2440541C00AF033B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6E184F2E2B89F7AE00A37E96 /* LaunchScreen.storyboard */ = {
+		A5BE2DD12440541F00AF033B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6E184F2F2B89F7AE00A37E96 /* Base */,
+				A5BE2DD22440541F00AF033B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,14 +178,14 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6E184F322B89F7AE00A37E96 /* Debug */ = {
+		A5BE2DD52440541F00AF033B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -200,7 +204,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -211,8 +214,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -226,25 +228,24 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		6E184F332B89F7AE00A37E96 /* Release */ = {
+		A5BE2DD62440541F00AF033B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -263,7 +264,6 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -274,8 +274,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -283,67 +282,45 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		6E184F352B89F7AE00A37E96 /* Debug */ = {
+		A5BE2DD82440541F00AF033B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W5HZTU6SV8;
-				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = fabricaAutomoviles/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lordzzz.fabricaAutomoviles;
+				PRODUCT_BUNDLE_IDENTIFIER = com.villalvazo.fabricaAutomoviles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		6E184F362B89F7AE00A37E96 /* Release */ = {
+		A5BE2DD92440541F00AF033B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = W5HZTU6SV8;
-				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = fabricaAutomoviles/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lordzzz.fabricaAutomoviles;
+				PRODUCT_BUNDLE_IDENTIFIER = com.villalvazo.fabricaAutomoviles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -352,25 +329,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E184F1B2B89F7AB00A37E96 /* Build configuration list for PBXProject "fabricaAutomoviles" */ = {
+		A5BE2DBE2440541C00AF033B /* Build configuration list for PBXProject "fabricaAutomoviles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E184F322B89F7AE00A37E96 /* Debug */,
-				6E184F332B89F7AE00A37E96 /* Release */,
+				A5BE2DD52440541F00AF033B /* Debug */,
+				A5BE2DD62440541F00AF033B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E184F342B89F7AE00A37E96 /* Build configuration list for PBXNativeTarget "fabricaAutomoviles" */ = {
+		A5BE2DD72440541F00AF033B /* Build configuration list for PBXNativeTarget "fabricaAutomoviles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E184F352B89F7AE00A37E96 /* Debug */,
-				6E184F362B89F7AE00A37E96 /* Release */,
+				A5BE2DD82440541F00AF033B /* Debug */,
+				A5BE2DD92440541F00AF033B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6E184F182B89F7AB00A37E96 /* Project object */;
+	rootObject = A5BE2DBB2440541C00AF033B /* Project object */;
 }

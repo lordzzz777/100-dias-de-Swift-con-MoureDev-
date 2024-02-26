@@ -1,22 +1,30 @@
 //
-//  File.swift
+//  Automovil.swift
 //  fabricaAutomoviles
 //
-//   Created by lordzzz on 24/2/24.
+//  Created by Juan Villalvazo
+//  Copyright © Juan Villalvazo. All rights reserved.
 //
 
 import Foundation
 
-class Automovil {
-    var color = "neutro"
-    var numerollantas = 4
-    var precio = 0
+class Automovil{
     
-    func encendido() -> Bool {
+    var color = "neutro"
+    var numeroLlantas = 4
+    var precio = 5000
+    
+    func encender() -> Bool {
         return true
     }
     
-    func apagado () -> Bool {
+    func apagar() -> Bool {
         return false
     }
+    
+    func acelerar() -> String {
+        return "Aceleración exitosa"
+    }
+    
+    
 }

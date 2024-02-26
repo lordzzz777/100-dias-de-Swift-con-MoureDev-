@@ -1,197 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lWh-kk-7bn">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cdD-u8-LuY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fabrica-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fabricaAutomoviles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fábrica de automóviles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsm-Hl-3cX">
-                                <rect key="frame" x="68" y="148" width="257" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fabrica de Automoviles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-mG-KrA">
+                                <rect key="frame" x="77" y="141" width="260" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79P-6u-PhQ">
-                                <rect key="frame" x="16" y="258" width="162" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="INC-lp-IvS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Crear AT Sencillo"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyx-l9-Beu">
+                                <rect key="frame" x="96" y="396" width="223" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Crear Automovil Mazda Electrico"/>
                                 <connections>
-                                    <action selector="crearSencillo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gmT-gv-Btl"/>
-                                    <action selector="myButtonSencillo:" destination="rcS-Zv-Sgd" eventType="touchUpInside" id="8Mh-MH-gjm"/>
+                                    <action selector="crearAutomovilMazda:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dnS-AQ-6na"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0cM-eb-nSj">
-                                <rect key="frame" x="206" y="258" width="171" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="KQn-Ts-1rA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Crear AT Electrico"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOr-VJ-P8I">
+                                <rect key="frame" x="109" y="291" width="197" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Crear Automovil Sencillo"/>
                                 <connections>
-                                    <action selector="crearElectrico:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HbU-E1-mMT"/>
+                                    <action selector="crearAutomovil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o83-RD-hY9"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="0cM-eb-nSj" firstAttribute="leading" secondItem="79P-6u-PhQ" secondAttribute="trailing" constant="28" id="6hX-sj-nQp"/>
-                            <constraint firstItem="79P-6u-PhQ" firstAttribute="top" secondItem="Zsm-Hl-3cX" secondAttribute="bottom" constant="78" id="7bw-Yk-rGA"/>
-                            <constraint firstItem="79P-6u-PhQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PnO-eC-eEp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0cM-eb-nSj" secondAttribute="bottom" constant="569" id="R0j-oy-fYj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zsm-Hl-3cX" secondAttribute="trailing" constant="68" id="Uno-w6-6Hl"/>
-                            <constraint firstItem="Zsm-Hl-3cX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="kk5-2u-ug6"/>
-                            <constraint firstItem="0cM-eb-nSj" firstAttribute="top" secondItem="Zsm-Hl-3cX" secondAttribute="bottom" constant="78" id="mnJ-gx-YkU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="79P-6u-PhQ" secondAttribute="bottom" constant="569" id="ocM-Wg-MUw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0cM-eb-nSj" secondAttribute="trailing" constant="16" id="uAf-fs-YYp"/>
-                            <constraint firstItem="Zsm-Hl-3cX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="zLm-dS-CM5"/>
-                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Fabrica" id="XrB-XV-YCX"/>
+                    <navigationItem key="navigationItem" id="nGx-Dw-k3m"/>
                     <connections>
-                        <outlet property="myButtonElectrico" destination="0cM-eb-nSj" id="CBP-1r-rZf"/>
-                        <outlet property="myButtonSencillo" destination="79P-6u-PhQ" id="7Oi-Fh-gpl"/>
-                        <segue destination="UjN-hD-qKC" kind="show" identifier="nView2" id="jQL-Mg-GNf"/>
+                        <segue destination="lVK-Mq-zdc" kind="show" identifier="segueSegundaPantalla" id="gJ5-Ll-cOU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="rcS-Zv-Sgd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1061.8320610687022" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="134.59821428571428"/>
         </scene>
-        <!--View Controller2-->
-        <scene sceneID="G4I-9E-8pl">
+        <!--View Controller Segunda Pantalla-->
+        <scene sceneID="d1X-ak-GhS">
             <objects>
-                <viewController id="UjN-hD-qKC" customClass="ViewController2" customModule="fabricaAutomoviles" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AUK-gA-Btu">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <viewController id="lVK-Mq-zdc" customClass="ViewControllerSegundaPantalla" customModule="fabricaAutomoviles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Hf-LO-ev6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d6U-n3-Jsh">
-                                <rect key="frame" x="76" y="167" width="241" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="sGK-vp-cie"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n5q-YK-d8o">
+                                <rect key="frame" x="87" y="146" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUI-jr-MUV">
-                                <rect key="frame" x="153" y="337" width="87" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Enceder"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmG-sm-6Hg">
+                                <rect key="frame" x="174" y="340" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Encender"/>
                                 <connections>
-                                    <action selector="enceder:" destination="UjN-hD-qKC" eventType="touchUpInside" id="z3v-Do-gJt"/>
+                                    <action selector="encender:" destination="lVK-Mq-zdc" eventType="touchUpInside" id="r6H-L5-BL2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uA-2c-mbc">
-                                <rect key="frame" x="157" y="495" width="79" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Apagar"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIu-M0-hIO">
+                                <rect key="frame" x="182" y="409" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Apagar"/>
                                 <connections>
-                                    <action selector="apagar:" destination="UjN-hD-qKC" eventType="touchUpInside" id="caY-gM-lOe"/>
-                                    <action selector="apagarAU:" destination="UjN-hD-qKC" eventType="touchUpInside" id="FIg-B7-nuZ"/>
+                                    <action selector="apagar:" destination="lVK-Mq-zdc" eventType="touchUpInside" id="C7b-BN-3aL"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Información" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viS-b1-EHU">
-                                <rect key="frame" x="20" y="568" width="353" height="205"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="205" id="YKd-a8-BiS"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Go-Rk-baR">
+                                <rect key="frame" x="179" y="487" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Acelerar"/>
+                                <connections>
+                                    <action selector="acelerar:" destination="lVK-Mq-zdc" eventType="touchUpInside" id="XaK-kw-o8m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Información" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKL-a3-5Wc">
+                                <rect key="frame" x="20" y="593" width="374" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKS-uQ-jUh">
-                                <rect key="frame" x="112" y="100" width="169" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="jFa-va-h0R"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Motrar información"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDz-h7-War">
+                                <rect key="frame" x="138" y="98" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Mostrar Información"/>
                                 <connections>
-                                    <action selector="mostrarInfo:" destination="UjN-hD-qKC" eventType="touchUpInside" id="46h-rc-SoP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fE-0n-zNl">
-                                <rect key="frame" x="152.66666666666666" y="416" width="88" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Acelerar"/>
-                                <connections>
-                                    <action selector="acelerar:" destination="UjN-hD-qKC" eventType="touchUpInside" id="JL1-vx-xRj"/>
-                                    <action selector="apagar:" destination="UjN-hD-qKC" eventType="touchUpInside" id="VbR-Sv-Rpd"/>
+                                    <action selector="mostrarInformacion:" destination="lVK-Mq-zdc" eventType="touchUpInside" id="vY7-Nh-IT0"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="2PU-e5-c2S"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="fUI-jr-MUV" firstAttribute="top" secondItem="d6U-n3-Jsh" secondAttribute="bottom" constant="42" id="66W-NM-K7C"/>
-                            <constraint firstItem="d6U-n3-Jsh" firstAttribute="centerX" secondItem="fUI-jr-MUV" secondAttribute="centerX" id="Bkz-wu-ETh"/>
-                            <constraint firstItem="4uA-2c-mbc" firstAttribute="top" secondItem="3fE-0n-zNl" secondAttribute="bottom" constant="44" id="Df6-Vj-hcb"/>
-                            <constraint firstItem="d6U-n3-Jsh" firstAttribute="leading" secondItem="2PU-e5-c2S" secondAttribute="leading" constant="76" id="PTi-QQ-QAH"/>
-                            <constraint firstItem="3fE-0n-zNl" firstAttribute="top" secondItem="fUI-jr-MUV" secondAttribute="bottom" constant="44" id="Rkn-Q3-nnc"/>
-                            <constraint firstItem="d6U-n3-Jsh" firstAttribute="centerX" secondItem="4uA-2c-mbc" secondAttribute="centerX" id="RqT-ey-AKo"/>
-                            <constraint firstItem="cKS-uQ-jUh" firstAttribute="leading" secondItem="2PU-e5-c2S" secondAttribute="leading" constant="112" id="Smj-n2-6Pd"/>
-                            <constraint firstItem="d6U-n3-Jsh" firstAttribute="centerX" secondItem="3fE-0n-zNl" secondAttribute="centerX" id="Z0t-Zx-AE7"/>
-                            <constraint firstItem="2PU-e5-c2S" firstAttribute="trailing" secondItem="viS-b1-EHU" secondAttribute="trailing" constant="20" id="ge7-Rd-4Wp"/>
-                            <constraint firstItem="cKS-uQ-jUh" firstAttribute="top" secondItem="AUK-gA-Btu" secondAttribute="top" constant="100" id="hQr-MU-nAk"/>
-                            <constraint firstItem="2PU-e5-c2S" firstAttribute="trailing" secondItem="d6U-n3-Jsh" secondAttribute="trailing" constant="76" id="ncB-Ya-8Z2"/>
-                            <constraint firstItem="d6U-n3-Jsh" firstAttribute="top" secondItem="cKS-uQ-jUh" secondAttribute="bottom" constant="32" id="soV-mn-laQ"/>
-                            <constraint firstItem="viS-b1-EHU" firstAttribute="top" secondItem="4uA-2c-mbc" secondAttribute="bottom" constant="38" id="tez-tj-Lzw"/>
-                            <constraint firstItem="2PU-e5-c2S" firstAttribute="trailing" secondItem="cKS-uQ-jUh" secondAttribute="trailing" constant="112" id="uqI-ig-1Hu"/>
-                            <constraint firstItem="viS-b1-EHU" firstAttribute="leading" secondItem="2PU-e5-c2S" secondAttribute="leading" constant="20" id="vP9-Ar-Q75"/>
-                        </constraints>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uLd-sx-GVH"/>
                     </view>
-                    <navigationItem key="navigationItem" id="I7M-FL-bEs"/>
+                    <navigationItem key="navigationItem" id="nPs-0e-f4u"/>
                     <connections>
-                        <outlet property="myButtonAC" destination="3fE-0n-zNl" id="qZP-Z5-4Bc"/>
-                        <outlet property="myButtonApagar" destination="4uA-2c-mbc" id="oj0-i2-b9U"/>
-                        <outlet property="myButtonEncender" destination="fUI-jr-MUV" id="7Hy-Z0-a0Y"/>
-                        <outlet property="myButtonInfo" destination="cKS-uQ-jUh" id="Vlg-dM-HbF"/>
-                        <outlet property="myImage" destination="d6U-n3-Jsh" id="UoQ-Iy-Yrr"/>
-                        <outlet property="myInfoText" destination="viS-b1-EHU" id="bFZ-TW-vNm"/>
+                        <outlet property="imageView" destination="n5q-YK-d8o" id="oxm-nf-Sbr"/>
+                        <outlet property="label" destination="RKL-a3-5Wc" id="3wV-Ke-TAv"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tvu-Qs-ZJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zrd-3g-3EU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1976.3358778625955" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1860.8695652173915" y="134.59821428571428"/>
         </scene>
-        <!--Fabrica Automovil-->
-        <scene sceneID="zIS-hj-CU5">
+        <!--Navigation Controller-->
+        <scene sceneID="593-eJ-oGH">
             <objects>
-                <navigationController title="Fabrica Automovil" automaticallyAdjustsScrollViewInsets="NO" id="lWh-kk-7bn" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cdD-u8-LuY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P4F-vV-3IS">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="krk-Df-08L">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="m5s-aI-dm8"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Tdx-WQ-3YG"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xiL-oP-gAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KEL-62-AHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="131.8840579710145" y="134.59821428571428"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
