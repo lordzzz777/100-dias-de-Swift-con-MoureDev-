@@ -2,9 +2,6 @@
 //  File.swift
 //  fabricaAutomoviles
 //
-//  Created by Juan Villalvazo.
-//  Copyright © Juan Villalvazo. All rights reserved.
-//
 
 import Foundation
 
