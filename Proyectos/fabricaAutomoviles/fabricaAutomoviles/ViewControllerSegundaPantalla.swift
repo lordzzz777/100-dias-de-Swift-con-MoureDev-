@@ -13,6 +13,8 @@ class ViewControllerSegundaPantalla: UIViewController {
     
     @IBOutlet weak var label: UILabel!
     
+    
+    
     var tipoAutomovil:Int?
     var automovilNormal:Automovil?
     var autoElectrico:AutomovilElectrico?
