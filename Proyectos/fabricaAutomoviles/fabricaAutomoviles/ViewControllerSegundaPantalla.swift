@@ -28,11 +28,13 @@ class ViewControllerSegundaPantalla: UIViewController {
         
         case 0:
             automovilNormal = Automovil()
+            imageView.image = UIImage(named: "cocheSencillo")
             label.text = "Se creo el auto normal correctamente"
             
         case 1:
             
             autoElectrico = AutomovilElectrico()
+            imageView.image = UIImage(named: "electrico")
             //C
             autoElectrico!.color = "Azul"
             autoElectrico!.precio = 8000
