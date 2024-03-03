@@ -32,15 +32,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="85g-To-F3H">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="85g-To-F3H">
                                 <rect key="frame" x="16" y="108" width="382" height="738"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4w-7B-eya">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="738"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="246"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Constraints de posición"/>
                                         <connections>
                                             <segue destination="7jp-tV-HxK" kind="show" id="FMp-ir-zuB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxK-hg-vJ7">
+                                        <rect key="frame" x="0.0" y="246" width="382" height="246"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Constraints de anchura y altura"/>
+                                        <connections>
+                                            <segue destination="dwb-vZ-TQ9" kind="show" id="UBC-Dl-E05"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ri-97-t9z">
+                                        <rect key="frame" x="0.0" y="492" width="382" height="246"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Constraints, modificar por código"/>
+                                        <connections>
+                                            <segue destination="21c-xI-YRb" kind="show" id="i2c-g4-oeZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -60,6 +76,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-630" y="6"/>
+        </scene>
+        <!--Constraints, modificar por código-->
+        <scene sceneID="35R-rS-Bq9">
+            <objects>
+                <viewController title="Constraints, modificar por código" id="21c-xI-YRb" customClass="ModifyConstraintsViewController" customModule="AdvancedAutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YsA-DC-ukw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krk-RJ-APc">
+                                <rect key="frame" x="16" y="108" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2gn-i8-ZLj"/>
+                                    <constraint firstAttribute="width" constant="100" id="HND-Bh-y6b"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WSb-wW-anQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Krk-RJ-APc" firstAttribute="top" secondItem="WSb-wW-anQ" secondAttribute="top" constant="16" id="7yX-cB-hkd"/>
+                            <constraint firstItem="Krk-RJ-APc" firstAttribute="leading" secondItem="WSb-wW-anQ" secondAttribute="leading" constant="16" id="yKL-oK-YaR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Constraints, modificar por código" id="pcA-Us-Oqx"/>
+                    <connections>
+                        <outlet property="heinhtConstraiint" destination="2gn-i8-ZLj" id="02d-dm-4Kf"/>
+                        <outlet property="topConstraint" destination="7yX-cB-hkd" id="jUY-RQ-wXz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KN3-EK-rpa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="679"/>
+        </scene>
+        <!--Constraints de anchura y altura-->
+        <scene sceneID="gjy-EW-7Jx">
+            <objects>
+                <viewController id="dwb-vZ-TQ9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sAo-KP-3Se">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebg-kU-EYu">
+                                <rect key="frame" x="16" y="108" width="200" height="300"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="QPA-87-l9E"/>
+                                    <constraint firstAttribute="height" constant="300" id="wX0-QR-hC5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Up-I5-Afy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ebg-kU-EYu" firstAttribute="top" secondItem="0Up-I5-Afy" secondAttribute="top" constant="16" id="dv4-am-HzO"/>
+                            <constraint firstItem="ebg-kU-EYu" firstAttribute="leading" secondItem="0Up-I5-Afy" secondAttribute="leading" constant="16" id="eLC-yi-62t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Constraints de anchura y altura" id="iu8-sd-XqW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Evy-41-2xG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="5"/>
         </scene>
         <!--Constraints de posición-->
         <scene sceneID="8JX-yC-iDd">
@@ -85,29 +165,21 @@
                                     <constraint firstAttribute="trailing" secondItem="idA-DL-w72" secondAttribute="trailing" constant="100" id="zLU-ed-qrx"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vga-XZ-sL4">
-                                <rect key="frame" x="16" y="478" width="68" height="368"/>
-                                <color key="backgroundColor" systemColor="tableCellBlueTextColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nxB-Ld-Tap"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="nxB-Ld-Tap" firstAttribute="bottom" secondItem="06Q-oI-p9h" secondAttribute="bottom" constant="400" id="2bU-SC-gwC"/>
                             <constraint firstItem="06Q-oI-p9h" firstAttribute="top" secondItem="nxB-Ld-Tap" secondAttribute="top" id="5KP-gp-Fpl"/>
-                            <constraint firstItem="idA-DL-w72" firstAttribute="leading" secondItem="vga-XZ-sL4" secondAttribute="trailing" constant="16" id="HPU-zI-BGu"/>
                             <constraint firstItem="06Q-oI-p9h" firstAttribute="leading" secondItem="nxB-Ld-Tap" secondAttribute="leading" id="S6A-wR-Azk"/>
                             <constraint firstItem="nxB-Ld-Tap" firstAttribute="trailing" secondItem="06Q-oI-p9h" secondAttribute="trailing" id="Xgr-QB-VVe"/>
-                            <constraint firstItem="vga-XZ-sL4" firstAttribute="top" secondItem="06Q-oI-p9h" secondAttribute="bottom" constant="16" id="bpu-Tx-5b6"/>
-                            <constraint firstItem="nxB-Ld-Tap" firstAttribute="bottom" secondItem="vga-XZ-sL4" secondAttribute="bottom" constant="16" id="nSr-rJ-lER"/>
-                            <constraint firstItem="vga-XZ-sL4" firstAttribute="leading" secondItem="nxB-Ld-Tap" secondAttribute="leading" constant="16" id="sFw-l5-YmE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Constraints de posición" id="gUP-k1-yAs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auJ-G7-QTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="163.768115942029" y="4.6875"/>
+            <point key="canvasLocation" x="338" y="-668"/>
         </scene>
     </scenes>
     <resources>
@@ -115,13 +187,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="tableCellBlueTextColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
