@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  iOS-Calculator
+//  Calculator_iOS
 //
 //  Created by Esteban Perez Castillejo on 10/3/24.
 //
