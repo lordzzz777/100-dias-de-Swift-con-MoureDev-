@@ -37,43 +37,88 @@ class ViewController: UIViewController {
     @IBOutlet var operatorMultiplication: UIButton!
     @IBOutlet var operatorDivision: UIButton!
     
+    // MARK: - Variables
+    
+    private var total: Double = 0
+    private var tem: Double = 0
+    private var operating = false
+    private var decimal = false
+    private var operation: OperationType = .none
+    
+    // MARK: - Contastes
+    
+    private enum OperationType {
+        case none, addiction, substraction, multiplication, division, percent
+       
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-         
+        number0.round()
+        number1.round()
+        number2.round()
+        number3.round()
+        number4.round()
+        number5.round()
+        number6.round()
+        number7.round()
+        number8.round()
+        number9.round()
+        numberDecimal.round()
+        
+        operatorAC.round()
+        operatorResult.round()
+        operatorPercent.round()
+        operatorAddition.round()
+        operatorDivision.round()
+        operatorSubstraction.round()
+        operatorMultiplication.round()
+        operatorPlusMinus.round()
+        
     }
 
     // MARK: - Button Actios
     
-    @IBAction func operatorAC(_ sender: Any) {
+    @IBAction func operatorAC(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorPusMinus(_ sender: Any) {
+    @IBAction func operatorPusMinus(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorPercent(_ sender: Any) {
+    @IBAction func operatorPercent(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorResult(_ sender: Any) {
+    @IBAction func operatorResult(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorAddition(_ sender: Any) {
+    @IBAction func operatorAddition(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorSubstraction(_ sender: Any) {
+    @IBAction func operatorSubstraction(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorACMultiplication(_ sender: Any) {
+    @IBAction func operatorACMultiplication(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func operatorDivision(_ sender: Any) {
+    @IBAction func operatorDivision(_ sender: UIButton) {
+        sender.shine()
     }
     
-    @IBAction func numberDecimalAction(_ sender: Any) {
+    @IBAction func numberDecimalAction(_ sender: UIButton) {
+        sender.shine()
     }
     
     
     @IBAction func numberAction(_ sender: UIButton) {
+        sender.shine()
         print(sender.tag)
     }
     
