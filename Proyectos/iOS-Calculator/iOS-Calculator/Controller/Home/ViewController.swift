@@ -39,13 +39,40 @@ class ViewController: UIViewController {
     
     // MARK: - Variables
     
-    private var total: Double = 0
-    private var tem: Double = 0
-    private var operating = false
-    private var decimal = false
-    private var operation: OperationType = .none
+    private var total: Double = 0                  // Total
+    private var temp: Double = 0                   // Valor por pantalla
+    private var operating = false                  // Indica si se ha inicializado un operador
+    private var decimal = false                    // indica si el valor es decimal
+    private var operation: OperationType = .none   // Operación actual
     
     // MARK: - Contastes
+    
+    private let kDecialSeparator = Locale.current.decimalSeparator
+    private let kMaxLength = 9
+    private let kMaxValue: Double = 999999999
+    private let kMinValue: Double = 0.00000001
+    
+    // Formateo de valor auxiliares
+    private let auxFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        let locale = Locale.current
+        formatter.groupingSeparator = ""
+        formatter.decimalSeparator = locale.decimalSeparator
+        formatter.numberStyle = .decimal
+        return formatter
+    }()
+    
+    // Formateo de valor de pantalla por defecto
+    private let printFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        let locale = Locale.current
+        formatter.groupingSeparator = locale.groupingSeparator
+        formatter.decimalSeparator = locale.description
+        formatter.maximumIntegerDigits = 9
+        formatter.minimumFractionDigits = 0
+        formatter.maximumFractionDigits = 8
+        return formatter
+    }()
     
     private enum OperationType {
         case none, addiction, substraction, multiplication, division, percent
@@ -76,6 +103,9 @@ class ViewController: UIViewController {
         operatorMultiplication.round()
         operatorPlusMinus.round()
         
+        numberDecimal.setTitle(kDecialSeparator, for: .normal)
+        
+        result()
     }
 
     // MARK: - Button Actios
@@ -122,5 +152,48 @@ class ViewController: UIViewController {
         print(sender.tag)
     }
     
+    // Lipier los valores
+    private func clear(){
+        operation = .none
+        operatorAC.setTitle("AC", for: .normal)
+        if temp != 0 {
+            temp = 0
+            resultLabel.text = "0"
+        }else{
+            total = 0
+            result()
+        }
+    }
+    
+    // Obtener el resultado final
+    private func result(){
+        switch operation{
+            
+        case .none:
+            // no hacemos nada
+            break
+        case .addiction:
+            total = total + temp
+            break
+        case .substraction:
+            total = total - temp
+            break
+        case .multiplication:
+            total = total * temp
+            break
+        case .division:
+            total = total / temp
+            break
+        case .percent:
+            temp = temp / 100
+            total = temp
+            break
+        }
+        // Formateo en pantalla
+        if total <= kMaxValue || total >= kMinValue {
+            resultLabel.text = printFormatter.string(from: NSNumber(value: total))
+        }
+        print("Total: \(total)")
+    }
 }
 
