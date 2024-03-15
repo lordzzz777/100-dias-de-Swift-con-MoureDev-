@@ -53,7 +53,7 @@ class ViewController: UIViewController {
     private let kMinValue: Double = 0.00000001
     
     // Formateo de valor auxiliares
-    private let auxFormatter: NumberFormatter = {
+    private lazy var auxFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         let locale = Locale.current
         formatter.groupingSeparator = ""
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     }()
     
     // Formateo de valor de pantalla por defecto
-    private let printFormatter: NumberFormatter = {
+    private lazy var printFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         let locale = Locale.current
         formatter.groupingSeparator = locale.groupingSeparator
@@ -74,11 +74,21 @@ class ViewController: UIViewController {
         return formatter
     }()
     
+    // Formato de valor por pantalla modo cientifico
+    private let printScientificFormatter: NumberFormatter = {
+       let formatter = NumberFormatter()
+        formatter.numberStyle = .scientific
+        formatter.maximumFractionDigits = 3
+        formatter.exponentSymbol = "e"
+        return formatter
+    }()
+    
     private enum OperationType {
         case none, addiction, substraction, multiplication, division, percent
        
     }
     
+    // Estilo de boton
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -111,45 +121,117 @@ class ViewController: UIViewController {
     // MARK: - Button Actios
     
     @IBAction func operatorAC(_ sender: UIButton) {
+        clear()
         sender.shine()
     }
     
     @IBAction func operatorPusMinus(_ sender: UIButton) {
+        temp = temp * (-1)
+        resultLabel.text = printFormatter .string(from: NSNumber(value: temp))
         sender.shine()
     }
     
     @IBAction func operatorPercent(_ sender: UIButton) {
+        if operation != .percent {
+            result()
+        }
+        
+        operating = true
+        operation = .percent
+        result()
+        
         sender.shine()
     }
     
     @IBAction func operatorResult(_ sender: UIButton) {
+        result()
         sender.shine()
     }
     
     @IBAction func operatorAddition(_ sender: UIButton) {
+        if operating {
+                result()
+            }
+        operating = true
+        operation = .addiction
         sender.shine()
     }
     
     @IBAction func operatorSubstraction(_ sender: UIButton) {
+        if operating {
+            result()
+        }
+        operating = true
+        operation = .substraction
         sender.shine()
     }
     
     @IBAction func operatorACMultiplication(_ sender: UIButton) {
+        if operating {
+            result()
+        }
+        operating = true
+        operation = .multiplication
         sender.shine()
     }
     
     @IBAction func operatorDivision(_ sender: UIButton) {
+        if operating {
+            result()
+        }
+        operating = true
+        operation = .division
         sender.shine()
     }
     
     @IBAction func numberDecimalAction(_ sender: UIButton) {
+        // Optener un valor asociado a nuestran variable emporal
+        let currentTemp = auxFormatter.string(from: NSNumber(value: temp))!
+        
+        // comprobar si estamor realizando alguna operación
+        if !operating && currentTemp.count >= kMaxLength {
+            return
+        }
+        
+        // se accede ala lavel y se muestra
+        resultLabel.text = resultLabel.text! + (kDecialSeparator ?? "")
+        decimal = true
+        
         sender.shine()
     }
     
     
     @IBAction func numberAction(_ sender: UIButton) {
+       
+        // cambia el titulo de "AC" por "C"
+        operatorAC.setTitle("C", for: .normal)
+        
+        // accede al valor formateado de nuestro temporal
+        var currentTemp = auxFormatter.string(from: NSNumber(value: temp))!
+        
+        // Comprobar que lo que estamos escribiendo es sustectible de operar
+        if !operating && currentTemp.count >= kMaxLength {
+            return
+        }
+        
+        // asegurar que se ha seleccionado una operación
+        if operating{
+            total = total == 0 ? temp : total
+            resultLabel.text = ""
+            currentTemp = ""
+            operating = false
+        }
+        
+        // Comprobar que estemos con valores decimales
+        if decimal {
+            currentTemp = "\(currentTemp) \(kDecialSeparator ?? "")"
+            decimal = false
+        }
+        
+        let number = sender.tag
+        temp = Double(currentTemp + String(sender.tag) )!
+        resultLabel.text = printFormatter.string(from: NSNumber(value: temp))
         sender.shine()
-        print(sender.tag)
     }
     
     // Lipier los valores
@@ -182,7 +264,12 @@ class ViewController: UIViewController {
             total = total * temp
             break
         case .division:
-            total = total / temp
+            if temp != 0 {
+                total = total / temp
+            }else{
+                temp = 0
+                resultLabel.text = "0"
+            }
             break
         case .percent:
             temp = temp / 100

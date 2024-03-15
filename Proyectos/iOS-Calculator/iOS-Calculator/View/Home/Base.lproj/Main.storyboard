@@ -42,6 +42,7 @@
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="LUN-RY-8xz" secondAttribute="height" multiplier="1:1" id="9ef-G6-ufb"/>
+                                                    <constraint firstAttribute="width" secondItem="LUN-RY-8xz" secondAttribute="height" multiplier="1:1" id="VMi-F3-ZKK"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -56,6 +57,7 @@
                                                 <rect key="frame" x="186.66666666666666" y="0.0" width="72.999999999999972" height="73.333333333333329"/>
                                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="HD0-KQ-v1c" secondAttribute="height" multiplier="1:1" id="fDW-M9-aI1"/>
                                                     <constraint firstAttribute="width" secondItem="HD0-KQ-v1c" secondAttribute="height" multiplier="1:1" id="suo-r4-mvU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
@@ -71,6 +73,7 @@
                                                 <rect key="frame" x="279.66666666666669" y="0.0" width="73.333333333333314" height="73.333333333333329"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.58039215690000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="fUE-Wd-2ys" secondAttribute="height" multiplier="1:1" id="oWD-Wq-AMc"/>
                                                     <constraint firstAttribute="width" secondItem="fUE-Wd-2ys" secondAttribute="height" multiplier="1:1" id="tk0-Oj-cqb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
@@ -83,11 +86,6 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="LUN-RY-8xz" firstAttribute="width" secondItem="LUN-RY-8xz" secondAttribute="height" multiplier="1:1" id="VMi-F3-ZKK"/>
-                                            <constraint firstItem="HD0-KQ-v1c" firstAttribute="width" secondItem="HD0-KQ-v1c" secondAttribute="height" multiplier="1:1" id="fDW-M9-aI1"/>
-                                            <constraint firstItem="fUE-Wd-2ys" firstAttribute="width" secondItem="fUE-Wd-2ys" secondAttribute="height" multiplier="1:1" id="oWD-Wq-AMc"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ICN-dU-m0f">
                                         <rect key="frame" x="0.0" y="93.333333333333314" width="353" height="73.333333333333314"/>
@@ -111,6 +109,7 @@
                                                 <rect key="frame" x="93.333333333333343" y="0.0" width="73.333333333333343" height="73.333333333333329"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Jzg-KN-wrG" secondAttribute="height" multiplier="1:1" id="7hn-P2-EnF"/>
                                                     <constraint firstAttribute="width" secondItem="Jzg-KN-wrG" secondAttribute="height" multiplier="1:1" id="wsr-Ii-Tgt"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
@@ -126,6 +125,7 @@
                                                 <rect key="frame" x="186.66666666666666" y="0.0" width="72.999999999999972" height="73.333333333333329"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="wh9-YD-0ek" secondAttribute="height" multiplier="1:1" id="Brx-ox-0Bh"/>
                                                     <constraint firstAttribute="width" secondItem="wh9-YD-0ek" secondAttribute="height" multiplier="1:1" id="S2p-xa-lwy"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
@@ -142,6 +142,7 @@
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.58039215690000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="UML-3a-cM8" secondAttribute="height" multiplier="1:1" id="KI3-1Y-NrV"/>
+                                                    <constraint firstAttribute="width" secondItem="UML-3a-cM8" secondAttribute="height" multiplier="1:1" id="aSH-PN-E2T"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -153,11 +154,6 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="Jzg-KN-wrG" firstAttribute="width" secondItem="Jzg-KN-wrG" secondAttribute="height" multiplier="1:1" id="7hn-P2-EnF"/>
-                                            <constraint firstItem="wh9-YD-0ek" firstAttribute="width" secondItem="wh9-YD-0ek" secondAttribute="height" multiplier="1:1" id="Brx-ox-0Bh"/>
-                                            <constraint firstItem="UML-3a-cM8" firstAttribute="width" secondItem="UML-3a-cM8" secondAttribute="height" multiplier="1:1" id="aSH-PN-E2T"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BUv-G7-Mat">
                                         <rect key="frame" x="0.0" y="186.66666666666669" width="353" height="73.333333333333314"/>
@@ -181,6 +177,7 @@
                                                 <rect key="frame" x="93.333333333333343" y="0.0" width="73.333333333333343" height="73.333333333333329"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="WJ2-sP-jEI" secondAttribute="height" multiplier="1:1" id="Ee0-91-68a"/>
                                                     <constraint firstAttribute="width" secondItem="WJ2-sP-jEI" secondAttribute="height" multiplier="1:1" id="h37-VB-7O2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
@@ -196,6 +193,7 @@
                                                 <rect key="frame" x="186.66666666666666" y="0.0" width="72.999999999999972" height="73.333333333333329"/>
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="C6s-6D-e6t" secondAttribute="height" multiplier="1:1" id="Lwr-Uf-Jst"/>
                                                     <constraint firstAttribute="width" secondItem="C6s-6D-e6t" secondAttribute="height" multiplier="1:1" id="k7p-Qx-zma"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
@@ -211,6 +209,7 @@
                                                 <rect key="frame" x="279.66666666666669" y="0.0" width="73.333333333333314" height="73.333333333333329"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.58039215690000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="KZr-gy-jDV" secondAttribute="height" multiplier="1:1" id="Chn-TH-aKh"/>
                                                     <constraint firstAttribute="width" secondItem="KZr-gy-jDV" secondAttribute="height" multiplier="1:1" id="iJf-M9-2xo"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
@@ -223,11 +222,6 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="KZr-gy-jDV" firstAttribute="width" secondItem="KZr-gy-jDV" secondAttribute="height" multiplier="1:1" id="Chn-TH-aKh"/>
-                                            <constraint firstItem="WJ2-sP-jEI" firstAttribute="width" secondItem="WJ2-sP-jEI" secondAttribute="height" multiplier="1:1" id="Ee0-91-68a"/>
-                                            <constraint firstItem="C6s-6D-e6t" firstAttribute="width" secondItem="C6s-6D-e6t" secondAttribute="height" multiplier="1:1" id="Lwr-Uf-Jst"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EYG-qS-30m">
                                         <rect key="frame" x="0.0" y="279.99999999999994" width="353" height="73"/>
@@ -252,6 +246,7 @@
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="R4G-pQ-yej" secondAttribute="height" multiplier="1:1" id="BE6-Qk-U8r"/>
+                                                    <constraint firstAttribute="width" secondItem="R4G-pQ-yej" secondAttribute="height" multiplier="1:1" id="qFK-bU-ej8"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -267,6 +262,7 @@
                                                 <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="BpS-aN-Rr9" secondAttribute="height" multiplier="1:1" id="qIU-EA-4RV"/>
+                                                    <constraint firstAttribute="width" secondItem="BpS-aN-Rr9" secondAttribute="height" multiplier="1:1" id="vvH-4s-D4z"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -281,6 +277,7 @@
                                                 <rect key="frame" x="279.66666666666669" y="0.0" width="73.333333333333314" height="73"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.58039215690000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" secondItem="YVr-GM-keg" secondAttribute="height" multiplier="1:1" id="BfP-6O-YcH"/>
                                                     <constraint firstAttribute="width" secondItem="YVr-GM-keg" secondAttribute="height" multiplier="1:1" id="pX5-PQ-mwq"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
@@ -293,11 +290,6 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="YVr-GM-keg" firstAttribute="width" secondItem="YVr-GM-keg" secondAttribute="height" multiplier="1:1" id="BfP-6O-YcH"/>
-                                            <constraint firstItem="R4G-pQ-yej" firstAttribute="width" secondItem="R4G-pQ-yej" secondAttribute="height" multiplier="1:1" id="qFK-bU-ej8"/>
-                                            <constraint firstItem="BpS-aN-Rr9" firstAttribute="width" secondItem="BpS-aN-Rr9" secondAttribute="height" multiplier="1:1" id="vvH-4s-D4z"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iSs-Cc-nGc">
                                         <rect key="frame" x="0.0" y="372.99999999999994" width="353" height="73.333333333333314"/>
@@ -341,6 +333,7 @@
                                                         <rect key="frame" x="93.000000000000028" y="0.0" width="73.333333333333343" height="73.333333333333329"/>
                                                         <color key="backgroundColor" red="0.99607843139999996" green="0.58039215690000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="width" secondItem="YSu-eS-WsK" secondAttribute="height" multiplier="1:1" id="bML-1C-Lxv"/>
                                                             <constraint firstAttribute="width" secondItem="YSu-eS-WsK" secondAttribute="height" multiplier="1:1" id="hGT-lE-cmI"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
@@ -353,17 +346,14 @@
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="YSu-eS-WsK" firstAttribute="width" secondItem="YSu-eS-WsK" secondAttribute="height" multiplier="1:1" id="bML-1C-Lxv"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJQ-xQ-kxi">
-                                <rect key="frame" x="20" y="192" width="353" height="119.66666666666669"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="SJQ-xQ-kxi">
+                                <rect key="frame" x="20" y="198.33333333333334" width="353" height="113.33333333333334"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="100"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -409,7 +399,7 @@
     </scenes>
     <resources>
         <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
