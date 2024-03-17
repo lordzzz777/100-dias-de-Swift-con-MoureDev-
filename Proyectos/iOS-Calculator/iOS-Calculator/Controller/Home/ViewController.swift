@@ -49,6 +49,7 @@ class ViewController: UIViewController {
     
     private let kDecialSeparator = Locale.current.decimalSeparator
     private let kMaxLength = 9
+    private let kTotal = "total"
     
     // Formateo de valor auxiliares
     private lazy var auxFormatter: NumberFormatter = {
@@ -105,6 +106,17 @@ class ViewController: UIViewController {
     // Estilo de boton
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        numberDecimal.setTitle(kDecialSeparator, for: .normal)
+        
+        total = UserDefaults.standard.double(forKey: kTotal)
+        
+        result()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         // Do any additional setup after loading the view.
         number0.round()
         number1.round()
@@ -126,10 +138,6 @@ class ViewController: UIViewController {
         operatorSubstraction.round()
         operatorMultiplication.round()
         operatorPlusMinus.round()
-        
-        numberDecimal.setTitle(kDecialSeparator, for: .normal)
-        
-        result()
     }
 
     // MARK: - Button Actios
@@ -317,12 +325,14 @@ class ViewController: UIViewController {
         if let currentTotal = auxTotalFormatter.string(from: NSNumber(value: total)), currentTotal.count > kMaxLength{
             resultLabel.text = printScientificFormatter.string(from: NSNumber(value: total))
         }else{
-            resultLabel.text = printFormatter.string(from: NSNumber(value: temp))
+            resultLabel.text = printFormatter.string(from: NSNumber(value: total))
         }
         
         operation = .none
         
         selectVisualOpewrator()
+        
+        UserDefaults.standard.set(total, forKey: kTotal)
         
         print("Total: \(total)")
     }
