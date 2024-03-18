@@ -11,9 +11,9 @@
 		6E583B832BA1A47E00D1929C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E583B822BA1A47E00D1929C /* SceneDelegate.swift */; };
 		6E583B852BA1A47E00D1929C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E583B842BA1A47E00D1929C /* ViewController.swift */; };
 		6E583B882BA1A47E00D1929C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6E583B872BA1A47E00D1929C /* Base */; };
-		6E583B8A2BA1A48000D1929C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E583B892BA1A48000D1929C /* Assets.xcassets */; };
 		6E583B8D2BA1A48000D1929C /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6E583B8C2BA1A48000D1929C /* Base */; };
 		6E583B9B2BA1C21200D1929C /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E583B9A2BA1C21200D1929C /* UIButtonExtension.swift */; };
+		6EDCFF0B2BA8B84E007F2A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EDCFF0A2BA8B84E007F2A01 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,10 @@
 		6E583B822BA1A47E00D1929C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6E583B842BA1A47E00D1929C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6E583B872BA1A47E00D1929C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6E583B892BA1A48000D1929C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E583B8C2BA1A48000D1929C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E583B8E2BA1A48000D1929C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E583B9A2BA1C21200D1929C /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		6EDCFF0A2BA8B84E007F2A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				6E583B952BA1A70800D1929C /* View */,
 				6E583B942BA1A6FF00D1929C /* Model */,
 				6E583B822BA1A47E00D1929C /* SceneDelegate.swift */,
-				6E583B892BA1A48000D1929C /* Assets.xcassets */,
+				6EDCFF0A2BA8B84E007F2A01 /* Assets.xcassets */,
 				6E583B8E2BA1A48000D1929C /* Info.plist */,
 			);
 			path = "iOS-Calculator";
@@ -176,8 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E583B8A2BA1A48000D1929C /* Assets.xcassets in Resources */,
 				6E583B8D2BA1A48000D1929C /* Base in Resources */,
+				6EDCFF0B2BA8B84E007F2A01 /* Assets.xcassets in Resources */,
 				6E583B882BA1A47E00D1929C /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
