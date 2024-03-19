@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; configuration.title = "Navegate"; ObjectID = "64t-RQ-4xX"; */
+"64t-RQ-4xX.configuration.title" = "Navegate";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "64t-RQ-4xX"; */
+"64t-RQ-4xX.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Hola mundo"; ObjectID = "JjU-5r-vhP"; */
+"JjU-5r-vhP.text" = "Hola mundo";
+
+/* Class = "UILabel"; text = "Segunda pagina"; ObjectID = "jnF-vc-y6d"; */
+"jnF-vc-y6d.text" = "Segunda pagina";
