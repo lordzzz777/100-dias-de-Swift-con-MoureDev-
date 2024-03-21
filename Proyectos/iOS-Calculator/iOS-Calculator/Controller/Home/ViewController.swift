@@ -270,7 +270,7 @@ class ViewController: UIViewController {
             decimal = false
         }
         
-        let number = sender.tag
+        _ = sender.tag
         temp = Double(currentTemp + String(sender.tag) )!
         resultLabel.text = printFormatter.string(from: NSNumber(value: temp))
         
