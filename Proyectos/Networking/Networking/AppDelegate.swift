@@ -2,7 +2,6 @@
 //  AppDelegate.swift
 //  Networking
 //
-//
 
 import UIKit
 

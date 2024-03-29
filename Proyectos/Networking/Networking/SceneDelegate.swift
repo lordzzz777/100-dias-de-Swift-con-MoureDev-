@@ -2,7 +2,6 @@
 //  SceneDelegate.swift
 //  Networking
 //
-//
 
 import UIKit
 

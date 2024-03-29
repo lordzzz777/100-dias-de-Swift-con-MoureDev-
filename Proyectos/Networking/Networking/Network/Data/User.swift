@@ -2,7 +2,6 @@
 //  User.swift
 //  Networking
 //
-//
 
 import Foundation
 

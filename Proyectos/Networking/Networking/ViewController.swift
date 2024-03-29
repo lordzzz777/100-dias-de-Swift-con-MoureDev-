@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  Networking
 //
-//
 
 import UIKit
 import Kingfisher
