@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RoowView: View {
-    var programmers: Programmers
+    var programmers: Programmer
     var body: some View {
         HStack {
             programmers.avatar
@@ -23,16 +23,22 @@ struct RoowView: View {
                 
             }
             Spacer()
+            if programmers.favorite{
+                Image(systemName: "star.fill").foregroundStyle(.yellow)
+                    
+            }else{
+                Image(systemName: "star.fill").foregroundStyle(.gray)
+            }
         }
     }
 }
 
 #Preview {
-    RoowView(programmers: Programmers(
+    RoowView(programmers: Programmer(
         id: 1,
         name: "Esteaban",
         lenguages: "Swift",
-        avatar: Image("cover2")))
+        avatar: Image("cover2"), favorite: true))
      .previewLayout(.fixed(width: 400, height: 60))
     
 }

@@ -8,18 +8,30 @@
 import SwiftUI
 
 struct ListView: View {
+    @State var programmersModelData: ProgrammersModelData
+    @State private var showFavorites = false
+    private var filterProgrammes:[Programmer]{
+        return programmersModelData.programers.filter{ programers in
+            return !showFavorites || programers.favorite
+        }
+    }
     var body: some View {
         NavigationStack{
-            List(programer, id: \.id) { item in
-                NavigationLink(destination: DetailView(programmer: item)){
-                    RoowView(programmers: item)
+            VStack{
+                Toggle(isOn: $showFavorites, label: {
+                    Text("Mostrar favoritos")
+                }).padding()
+                List(filterProgrammes, id: \.id) { item in
+                    NavigationLink(destination: DetailView(programmers: item, favorite: $programmersModelData.programers[item.id].favorite)){
+                        RoowView(programmers: item)
+                    }
                 }
+                .navigationTitle("Programadores")
             }
-            .navigationTitle("Programadores")
         }
     }
 }
 
 #Preview {
-    ListView()
+    ListView(programmersModelData: .init())
 }
