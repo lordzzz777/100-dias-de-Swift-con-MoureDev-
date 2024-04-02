@@ -10,7 +10,12 @@ import SwiftUI
 struct DetailView: View {
     
     var programmers: Programmer
+    
     @Binding var favorite: Bool
+    @State private var persistencia = UserDefaults.standard.bool(forKey: "isBooleanKey")
+    
+    let booleanKey = "isBooleanKey"
+    
     var body: some View {
         VStack {
             programmers.avatar
@@ -24,8 +29,10 @@ struct DetailView: View {
                 Text(programmers.name).font(.largeTitle)
                 Button(action: {
                     favorite.toggle()
+                    UserDefaults.standard.set(self.favorite, forKey: self.booleanKey)
                 }, label: {
                     Image(systemName: favorite ? "star.fill" : "star").foregroundStyle(favorite ?  .yellow : .gray)
+                        
                 })
             }
             Text(programmers.lenguages).font(.title)
