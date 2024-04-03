@@ -12,6 +12,9 @@
 		6E6D7D3C2BBABD9B00D22E42 /* RoowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6D7D3B2BBABD9B00D22E42 /* RoowView.swift */; };
 		6E6D7D3F2BBAC1EB00D22E42 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6D7D3E2BBAC1EB00D22E42 /* ListView.swift */; };
 		6E6D7D412BBAC82800D22E42 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6D7D402BBAC82800D22E42 /* DetailView.swift */; };
+		6E6DE0F42BBD3998000B7CEC /* ContadorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DE0F32BBD3998000B7CEC /* ContadorView.swift */; };
+		6E6DE0F72BBD3B65000B7CEC /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DE0F62BBD3B65000B7CEC /* BindingView.swift */; };
+		6E6DE0F92BBD88D1000B7CEC /* EnviromentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6DE0F82BBD88D1000B7CEC /* EnviromentView.swift */; };
 		6E7247EC2BB8332F004012F0 /* SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7247EB2BB8332F004012F0 /* SwiftUITutorialApp.swift */; };
 		6E7247EE2BB8332F004012F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7247ED2BB8332F004012F0 /* ContentView.swift */; };
 		6E7247F02BB83331004012F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7247EF2BB83331004012F0 /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 		6E6D7D3B2BBABD9B00D22E42 /* RoowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoowView.swift; sourceTree = "<group>"; };
 		6E6D7D3E2BBAC1EB00D22E42 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		6E6D7D402BBAC82800D22E42 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		6E6DE0F32BBD3998000B7CEC /* ContadorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorView.swift; sourceTree = "<group>"; };
+		6E6DE0F62BBD3B65000B7CEC /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
+		6E6DE0F82BBD88D1000B7CEC /* EnviromentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentView.swift; sourceTree = "<group>"; };
 		6E7247E82BB8332F004012F0 /* SwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E7247EB2BB8332F004012F0 /* SwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialApp.swift; sourceTree = "<group>"; };
 		6E7247ED2BB8332F004012F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 		6E6D7D3D2BBAC1B900D22E42 /* Ejecicianterior */ = {
 			isa = PBXGroup;
 			children = (
+				6E6DE0F52BBD3B01000B7CEC /* PropertyWrappers */,
 				6E6D7D352BBAB69100D22E42 /* MainView.swift */,
 				6E7247ED2BB8332F004012F0 /* ContentView.swift */,
 				6E8FF6AD2BB9CB110091DEAA /* ImagenView.swift */,
@@ -75,6 +82,16 @@
 				6E7247EB2BB8332F004012F0 /* SwiftUITutorialApp.swift */,
 			);
 			path = Ejecicianterior;
+			sourceTree = "<group>";
+		};
+		6E6DE0F52BBD3B01000B7CEC /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				6E6DE0F32BBD3998000B7CEC /* ContadorView.swift */,
+				6E6DE0F62BBD3B65000B7CEC /* BindingView.swift */,
+				6E6DE0F82BBD88D1000B7CEC /* EnviromentView.swift */,
+			);
+			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
 		6E7247DF2BB8332F004012F0 = {
@@ -182,9 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6DE0F42BBD3998000B7CEC /* ContadorView.swift in Sources */,
+				6E6DE0F72BBD3B65000B7CEC /* BindingView.swift in Sources */,
 				6E6D7D3F2BBAC1EB00D22E42 /* ListView.swift in Sources */,
 				6E6D7D412BBAC82800D22E42 /* DetailView.swift in Sources */,
 				6E7247EE2BB8332F004012F0 /* ContentView.swift in Sources */,
+				6E6DE0F92BBD88D1000B7CEC /* EnviromentView.swift in Sources */,
 				6E6D7D392BBABC3800D22E42 /* File.swift in Sources */,
 				6E7247EC2BB8332F004012F0 /* SwiftUITutorialApp.swift in Sources */,
 				6E8FF6AE2BB9CB110091DEAA /* ImagenView.swift in Sources */,
