@@ -10,6 +10,7 @@ import FirebaseAuth
 
 enum  ProviderType: String {
    case basic
+   case google
 }
 
 class HomeViewController: UIViewController {
@@ -34,25 +35,29 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
           title = "Inicio"
+        navigationItem.setHidesBackButton(true, animated: false)
         emailLabel.text = email
         providerLabel.text = provider.rawValue
         
+        // Guardar los datos del Usuario
+        
+        let defaults = UserDefaults.standard
+        
+        defaults.set(email, forKey: "email")
+        defaults.set(provider.rawValue, forKey: "provider")
+        defaults.synchronize()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func closeSessionButtonAction(_ sender: Any) {
         
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "email")
+        defaults.removeObject(forKey: "provider")
+        defaults.synchronize()
+        
         switch provider {
-        case .basic:
+        case .basic, .google:
             do{
               try Auth.auth().signOut()
                 navigationController?.popViewController(animated: true)
