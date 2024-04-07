@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseAnalytics
 import FirebaseAuth
+import GoogleSignIn
 
 class ViewController: UIViewController {
     
@@ -31,6 +32,14 @@ class ViewController: UIViewController {
           //  authStackView.isHidden = true
             navigationController?.pushViewController(HomeViewController(email: email, provider: ProviderType.init(rawValue: provider)!), animated: false)
         }
+        
+        // Google auth
+       // GIDSignIn.sharedInstance.presentingViewController = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        authStackView.isHidden = false
     }
 
     @IBAction func signUpButtonAction(_ sender: Any) {
@@ -64,6 +73,7 @@ class ViewController: UIViewController {
     
 
     @IBAction func googleButtonAction(_ sender: Any) {
+        
     }
     
     

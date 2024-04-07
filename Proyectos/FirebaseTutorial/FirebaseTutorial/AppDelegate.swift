@@ -13,23 +13,40 @@ import GoogleSignIn
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    func application(_ app: UIApplication,open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+      return GIDSignIn.sharedInstance.handle(url)
+    }
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    private func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) async -> Bool {
         
         
         // Fire base
         FirebaseApp.configure()
         
-        // Google Auth
+        // Create Google Sign In configuration object.
+        guard let clientID = FirebaseApp.app()?.options.clientID else { fatalError("No client  ID found in Firebase configuration")}
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
         
-        
-        return true
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let window = windowScene.windows.first,
+              let rootViewController = window.rootViewController else {
+            printContent("there is not root view controller")
+            return false
+        }
+        // Start the sign in flow!
+        do{
+            let userAutentication = try await GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController)
+            let user = userAutentication.user
+            return true
+        }catch {
+            print(error.localizedDescription)
+            return false
+        }
+  
+      //  return true
     }
     
-    func application(_ app: UIApplication,open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-      return GIDSignIn.sharedInstance.handle(url)
-    }
+    
 
     // MARK: UISceneSession Lifecycle
 
